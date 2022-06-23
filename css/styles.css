@@ -23,21 +23,24 @@ header {
   background-color: #8b1a1a;
   padding: 20px;
   width: 100%;
-  height: 100px;
-  position: fixed;
+  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px blackk
+  
 }
-header .container {
-  max-width: 1100px;
-  margin: auto;
-}
+ 
+
+
 .nav-list {
   font-size: 1.1rem;
   display: flex;
   list-style: none;
+  margin-right: 25px;
 }
+
 
 .topBar nav ul li {
   padding: 10px 20px;
@@ -54,7 +57,7 @@ header .container {
   border-bottom: 2px solid rgb(238 0 0);
 }
 .topBar nav ul li a {
-  color: black;
+  color: rgb(234, 227, 227);
   text-decoration: none;
 }
 .logo {
@@ -62,7 +65,13 @@ header .container {
   flex-direction: column;
   align-items: center;
   top: 0%;
+  margin-top: 15px;
+  margin-left: 15px;
 }
+#logo__nome {
+  color: #dcdcdc;
+}
+
 main {
   background-color: red;
   height: 100vh;
@@ -75,7 +84,9 @@ main {
   justify-content: center;
   align-items: center;
   background-image: url(../img/1072679.jpg);
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 
 }
 
@@ -89,6 +100,7 @@ main {
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.582);
 }
 .banner a {
   color: white;
@@ -96,61 +108,190 @@ main {
 }
 .banner div:hover {
   cursor: pointer;
-  border: #1e90ff solid 1px;
+  color: #b5daff;
+  border: #5fa5eb solid 1px;
 }
+
+.title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+
 .container-card {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-
+  padding-bottom: 15vh;
 }
 .cards {
-  width: 30%;
-  display: flex;
-border: #333 solid 3px;
-  align-items: center;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
- 
-  border-radius: 10px;
+
+  width: 40%;
+  border: #333 solid 3px;
+  height: auto;
+  border-radius: 9px;
 }
-footer{
+.img-card {
+  width: 100%;
+  height: 150px;
+  
+  background-color: #8b1a1a;
+  background-image: url(/img/INFOCHPDPICT000041975439.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius: 9.7px;
+
+}
+
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+
+  padding: 7px;
+  background-color: wheat;
+}
+.card-desc p {
+  text-align: justify;
+}
+
+.card-link {
+  display: flex;
+  justify-content: center;
+
+  background: #33BB69;
+  width: 60%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.title-cards {
+  background-color: #8b1a1a;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: #171717;
+}
+
+.students {
+  background: #171717;
+  width: 100%;
   color: white;
-    background-color: #8b1a1a;
-    padding: 20px;
-    width: 100vw;
-    height: 10vh;
-    position:fixed; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    bottom: 0;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-footer .alunos{
+
+.aluno h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.aluno p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+.aluno h1,
+.aluno p,
+.aluno .socials {
+  margin: .4rem;
+}
+
+.aluno1 {
+  margin: 2.5rem 0 0 2.5rem;
+}
+
+.aluno2 {
+  margin: .5rem 0 0 2.5rem;
+}
+
+.aluno3 {
+  margin: .5rem 0 0 2.5rem;
+}
+
+.developed {
+  margin-top: 5rem;
+  padding-bottom: 3.5rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.socials a {
+  margin-right: .3rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
- 
-}
-.img-card img{
-    width: 250px;
-    ;
-}
-.title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
+    
+  }
+  
+  .container-card {
     display: flex;
-    justify-content: center;
+  }
+  .cards {
+    width: 80%;
+  }
+  .topBar nav ul li {
+
+  }
+  .topBar nav ul li a {
+   font-size: 0.5rem;
+   flex-wrap: wrap;
+   gap: 5px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 25px;
+  }
+
+  .students {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.aluno1 {
+    text-align: start;
+}
+
+.aluno2 {
+    text-align: center;
+}
+
+.aluno3 {
+    text-align: end;
+}
+
+.aluno {
+    margin-top: 3.5rem;
+}
+
+
+
+
 }
