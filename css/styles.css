@@ -27,7 +27,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
+  position: fixed;
+  z-index: 9999;
+
 }
  
 .nav-list {
@@ -70,7 +72,6 @@ header {
 
 main {
   background-color: red;
-  height: 100vh;
 }
 .banner {
   height: 100vh;
@@ -176,31 +177,59 @@ main {
   font-size: 1.5rem;
 }
 
-footer{
+footer {
+  background: #171717;
+}
+
+.students {
+  background: #171717;
+  
   color: white;
-    background-color: #8b1a1a;
-    padding: 20px;
-    width: 100vw;
-    height: 10vh;
-    position:fixed; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    bottom: 0;
-    align-items: center;
+  display: flex;
+  justify-content: center;
 }
-footer .alunos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
- 
+
+.aluno h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
 }
-.img-card img{
-    width: 250px;
-    ;
+
+.aluno p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+.aluno h1,
+.aluno p,
+.aluno .socials {
+  margin: .4rem;
+}
+
+.aluno1 {
+  margin: .5rem 0 0 2.5rem;
+}
+
+.aluno2 {
+  margin: .5rem 0 0 2.5rem;
+}
+
+.aluno3 {
+  margin: .5rem 0 0 2.5rem;
+}
+
+.developed {
+  margin-top: 5rem;
+  padding-bottom: 3.5rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.socials a {
+  margin-right: .3rem;
 }
 
 @media screen and (max-width: 1000px) {
