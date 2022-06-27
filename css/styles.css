@@ -27,37 +27,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   z-index: 9999;
 
 }
- 
-.nav-list {
-  font-size: 1.1rem;
-  display: flex;
-  list-style: none;
-  margin-right: 25px;
-}
 
 
-.topBar nav ul li {
-  padding: 10px 20px;
-  border-bottom: 5px solid #cd0000;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  list-style: none;
-  margin: 0;
-  display: flex;
-}
-.topBar nav ul li:hover {
-  cursor: pointer;
-  border-bottom: 2px solid rgb(238 0 0);
-}
-.topBar nav ul li a {
-  color: rgb(234, 227, 227);
-  text-decoration: none;
-}
 .logo {
   display: flex;
   flex-direction: column;
@@ -70,12 +45,8 @@ header {
   color: #dcdcdc;
 }
 
-main {
-  
-}
 .banner {
   height: 100vh;
-  width: 100vw;
   color: white;
   display: flex;
   justify-content: center;
@@ -113,53 +84,11 @@ main {
   color: #333;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  margin-top: 2rem;
 }
-
 
 .container-card {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 15vh;
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  width: 40%;
-  border: #333 solid 3px;
-  height: auto;
-  border-radius: 9px;
-}
-.img-card {
-  width: 100%;
-  height: 150px;
-  
-  
-  background-image: url(/img/INFOCHPDPICT000041975439.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  border-radius: 9.7px;
-
-}
-.card-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-
-  padding: 7px;
-  background-color: wheat;
-}
-.card-desc p {
-  text-align: justify;
+  padding-bottom: 5vh;
 }
 
 .card-link {
@@ -172,21 +101,18 @@ main {
   border-radius: 5px;
 }
 
-.title-cards {
-  background-color: #8b1a1a;
-  font-size: 1.5rem;
-}
-
 footer {
   background: #171717;
 }
 
 .students {
   background: #171717;
-  
   color: white;
+
   display: flex;
   justify-content: space-between;
+
+  padding-top: 1rem;
 }
 
 .aluno h1 {
@@ -194,6 +120,7 @@ footer {
   font-size: 24px;
   line-height: 28px;
   font-style: normal;
+  color: #dcdcdc;
 }
 
 .aluno p {
@@ -201,31 +128,25 @@ footer {
   font-size: 14px;
 }
 
-.aluno h1,
-.aluno p,
-.aluno .socials {
-  margin: .3rem;
-}
-
 .aluno1 {
   margin: .5rem 0 0 1rem;
 }
 
 .aluno2 {
-  margin: .5rem 0 0 2.0rem;
+  margin: .5rem 0 0 1rem;
 }
 
 .aluno3 {
-  margin: .5rem 0 0 1.5rem;
+  margin: .5rem 0 0 1rem;
   margin-right: 1rem;
 }
 
 .developed {
-  margin-top: 5rem;
+  margin-top: 2rem;
   padding-bottom: 2rem;
   font-weight: 400;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.936);
   text-align: center;
 }
 
@@ -251,8 +172,29 @@ footer {
     margin-right: 25px;
   }
 
+  .students {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  
+  }
 
+  .students h1 {
+    text-align: center;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
 
+  .aluno3 {
+    margin-right: 0rem;
+  }
+  .developed {
+    margin-top: 2rem;
+  }
 
 
 
