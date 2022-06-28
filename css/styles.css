@@ -17,10 +17,14 @@ html {
   --primary-color: black;
   --secondary-color: #dcdcdc;
   --card-color: #eee9e9;
+  
+}
+section {
+  background-color: #dcdcdc;
 }
 
 header {
-  background-color: #8b1a1a;
+  background-color: #090505;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -30,8 +34,14 @@ header {
   z-index: 9999;
 
 }
+.style{
+  font-size: 2.5rem;
+  font-style: italic;
+}
 
-
+.container_header img {
+   margin-bottom: 15px;
+}
 .logo {
   display: flex;
   flex-direction: column;
@@ -46,44 +56,92 @@ header {
 
 .banner {
   height: 100vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/1072679.jpg);
-  background-size: cover;
-  background-position: center;
-
+  text-decoration: none;
 }
-
-.banner div {
-  border: #eee9e9 solid 1px;
-  width: 322px;
-  height: 71px;
+.banner-explorar {
+  width: 150px;
+  height: 30px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 10rem;
   text-decoration: none;
-}
-.banner a {
-  color: white;
-  text-decoration: none;
-}
-.banner div:hover {
-  cursor: pointer;
-  border: #1e90ff solid 1px;
 }
 
+.slide{
+  width: 100vw;
+  transition: .6s;
+  }
+  
+  #slide1:checked ~ .s1 { 
+      margin-left: 0;
+  }
+  
+  #slide2:checked ~ .s1 { 
+      margin-left: -100vw;
+  }
+  #slide3:checked ~ .s1 { 
+      margin-left: -200vw;
+  }
+  #slide4:checked ~ .s1 { 
+      margin-left: -300vw;
+  }
+  #slide5:checked ~ .s1 { 
+      margin-left: -400vw;
+  }
+  .slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .slides{
+      display: flex;
+      height: 100%;
+  }
+  .content{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+    
+   
+  }
+  .navigation{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+  }
+  .bar{
+      width:70px;
+      height:17px;
+      border: 2px solid #fff;
+      margin: 6px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .6s;
+  }
+  .bar:hover{
+      background-color: #fff;
+  }
+  input{
+      display: none;
+  }
+
 .title{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #333;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  padding-top: 1.2rem;
 }
 
 .container-card {
@@ -113,6 +171,14 @@ header {
  
   transition: all .3s ease-in-out blue;
 }
+
+.card img {
+  height: 200px;
+}
+.card {
+  text-align: center;
+}
+
 footer {
   background: #171717;
 }
@@ -170,7 +236,9 @@ footer {
   header {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
+  
 
   .topBar nav ul li a {
    font-size: 0.5rem;
@@ -182,6 +250,13 @@ footer {
     flex-direction: column;
     list-style: none;
     margin-right: 25px;
+  }
+
+  .style{
+    font-size: 2rem;
+    font-style: italic;
+    margin-right: 70px;
+    margin-top: 25px;
   }
 
   .students {
@@ -208,6 +283,13 @@ footer {
     margin-top: 2rem;
   }
 
-
-
+  .bar {
+    width:50px;
+    height:17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+  }
 }
