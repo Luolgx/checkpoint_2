@@ -21,13 +21,12 @@ html {
 
 header {
   background-color: #8b1a1a;
-  padding: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   z-index: 9999;
 
 }
@@ -100,7 +99,20 @@ header {
   padding: 7px;
   border-radius: 5px;
 }
-
+.boton {
+  background-color: #8b1a1a;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-body button {
+  background-color: #8b1a1a;
+}
+.card-body button:hover {
+ 
+  transition: all .3s ease-in-out blue;
+}
 footer {
   background: #171717;
 }
