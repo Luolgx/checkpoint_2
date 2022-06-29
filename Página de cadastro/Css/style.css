@@ -18,16 +18,12 @@ body {
     border-radius: 10px;
 }
 
-footer {
-    background: #171717;
-  }
-  
   .students {
     background: #171717;
     color: white;
     display: flex;
-    justify-content: center;
-    margin-top: 12.5rem;
+    justify-content: space-around;
+    
   }
   
   .aluno h1 {
@@ -49,19 +45,19 @@ footer {
   }
   
   .aluno1 {
-    margin: .5rem 0 0 2.5rem;
+    margin: .5rem ;
   }
   
   .aluno2 {
-    margin: .5rem 0 0 2.5rem;
+    margin: .5rem ;
   }
   
   .aluno3 {
-    margin: .5rem 0 0 2.5rem;
+    margin: .5rem;
   }
   
   .developed {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
@@ -72,6 +68,8 @@ footer {
   }
   footer {
     background-color: black;
+    width: 100%;
+  
   }
   @media screen and (max-width: 1000px) {
     header {
@@ -84,7 +82,7 @@ footer {
       background-color: #5fa5eb;
     }
   
-  
+
   
     .container-card {
       display: flex;
@@ -93,7 +91,6 @@ footer {
       width: 80%;
     }
     .topBar nav ul li {
-  
     }
     .topBar nav ul li a {
      font-size: 0.5rem;
