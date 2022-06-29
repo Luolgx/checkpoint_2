@@ -17,48 +17,30 @@ html {
   --primary-color: black;
   --secondary-color: #dcdcdc;
   --card-color: #eee9e9;
+  
+}
+section {
+  background-color: #dcdcdc;
 }
 
 header {
-  background-color: #8b1a1a;
-  padding: 20px;
+  background-color: #090505;
   width: 100%;
-  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px blackk
-  
+  position: fixed;
+  z-index: 9999;
+
 }
- 
-
-
-.nav-list {
-  font-size: 1.1rem;
-  display: flex;
-  list-style: none;
-  margin-right: 25px;
+.style{
+  font-size: 2.5rem;
+  font-style: italic;
 }
 
-
-.topBar nav ul li {
-  padding: 10px 20px;
-  border-bottom: 5px solid #cd0000;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  list-style: none;
-  margin: 0;
-  display: flex;
-}
-.topBar nav ul li:hover {
-  cursor: pointer;
-  border-bottom: 2px solid rgb(238 0 0);
-}
-.topBar nav ul li a {
-  color: rgb(234, 227, 227);
-  text-decoration: none;
+.container_header img {
+   margin-bottom: 15px;
 }
 .logo {
   display: flex;
@@ -72,101 +54,98 @@ header {
   color: #dcdcdc;
 }
 
-main {
-  background-color: red;
-  height: 100vh;
-}
 .banner {
   height: 100vh;
-  width: 100vw;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/1072679.jpg);
-  background-size: cover;
-  background-position: center;
-  
-
+  text-decoration: none;
 }
-
-.banner div {
-  border: #eee9e9 solid 1px;
-  width: 322px;
-  height: 71px;
+.banner-explorar {
+  width: 150px;
+  height: 30px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 10rem;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.582);
-}
-.banner a {
-  color: white;
-  text-decoration: none;
-}
-.banner div:hover {
-  cursor: pointer;
-  color: #b5daff;
-  border: #5fa5eb solid 1px;
 }
 
+.slide{
+  width: 100vw;
+  transition: .6s;
+  }
+  
+  #slide1:checked ~ .s1 { 
+      margin-left: 0;
+  }
+  
+  #slide2:checked ~ .s1 { 
+      margin-left: -100vw;
+  }
+  #slide3:checked ~ .s1 { 
+      margin-left: -200vw;
+  }
+  #slide4:checked ~ .s1 { 
+      margin-left: -300vw;
+  }
+  #slide5:checked ~ .s1 { 
+      margin-left: -400vw;
+  }
+  .slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .slides{
+      display: flex;
+      height: 100%;
+  }
+  .content{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+    
+   
+  }
+  .navigation{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+  }
+  .bar{
+      width:70px;
+      height:17px;
+      border: 2px solid #fff;
+      margin: 6px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .6s;
+  }
+  .bar:hover{
+      background-color: #fff;
+  }
+  input{
+      display: none;
+  }
+
 .title{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #333;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding-top: 1.2rem;
 }
-
 
 .container-card {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-bottom: 15vh;
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  width: 40%;
-  border: #333 solid 3px;
-  height: auto;
-  border-radius: 9px;
-}
-.img-card {
-  width: 100%;
-  height: 150px;
-  
-  background-color: #8b1a1a;
-  background-image: url(/img/INFOCHPDPICT000041975439.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  border-radius: 9.7px;
-
-}
-
-.card-desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-
-  padding: 7px;
-  background-color: wheat;
-}
-.card-desc p {
-  text-align: justify;
+  padding-bottom: 5vh;
 }
 
 .card-link {
@@ -178,10 +157,26 @@ main {
   padding: 7px;
   border-radius: 5px;
 }
-
-.title-cards {
+.boton {
   background-color: #8b1a1a;
-  font-size: 1.5rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-body button {
+  background-color: #8b1a1a;
+}
+.card-body button:hover {
+ 
+  transition: all .3s ease-in-out blue;
+}
+
+.card img {
+  height: 200px;
+}
+.card {
+  text-align: center;
 }
 
 footer {
@@ -190,11 +185,12 @@ footer {
 
 .students {
   background: #171717;
-  width: 100%;
   color: white;
+
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-top: 1rem;
 }
 
 .aluno h1 {
@@ -202,6 +198,7 @@ footer {
   font-size: 24px;
   line-height: 28px;
   font-style: normal;
+  color: #dcdcdc;
 }
 
 .aluno p {
@@ -209,30 +206,25 @@ footer {
   font-size: 14px;
 }
 
-.aluno h1,
-.aluno p,
-.aluno .socials {
-  margin: .4rem;
-}
-
 .aluno1 {
-  margin: 2.5rem 0 0 2.5rem;
+  margin: .5rem 0 0 1rem;
 }
 
 .aluno2 {
-  margin: .5rem 0 0 2.5rem;
+  margin: .5rem 0 0 1rem;
 }
 
 .aluno3 {
-  margin: .5rem 0 0 2.5rem;
+  margin: .5rem 0 0 1rem;
+  margin-right: 1rem;
 }
 
 .developed {
-  margin-top: 5rem;
-  padding-bottom: 3.5rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
   font-weight: 400;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.936);
   text-align: center;
 }
 
@@ -240,24 +232,14 @@ footer {
   margin-right: .3rem;
 }
 
-
-
 @media screen and (max-width: 1000px) {
   header {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-evenly;
   }
   
-  .container-card {
-    display: flex;
-  }
-  .cards {
-    width: 80%;
-  }
-  .topBar nav ul li {
 
-  }
   .topBar nav ul li a {
    font-size: 0.5rem;
    flex-wrap: wrap;
@@ -270,28 +252,44 @@ footer {
     margin-right: 25px;
   }
 
+  .style{
+    font-size: 2rem;
+    font-style: italic;
+    margin-right: 70px;
+    margin-top: 25px;
+  }
+
   .students {
-    flex-direction: row;
-    justify-content: space-around;
-}
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  
+  }
 
-.aluno1 {
-    text-align: start;
-}
-
-.aluno2 {
+  .students h1 {
     text-align: center;
-}
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
 
-.aluno3 {
-    text-align: end;
-}
+  .aluno3 {
+    margin-right: 0rem;
+  }
+  .developed {
+    margin-top: 2rem;
+  }
 
-.aluno {
-    margin-top: 3.5rem;
-}
-
-
-
-
+  .bar {
+    width:50px;
+    height:17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+  }
 }

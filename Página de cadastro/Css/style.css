@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    
+  }
+
+body {
+    background-image: url(/Img/1072679.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+.logIn { 
+    border-radius: 10px;
+}
+
+  .students {
+    background: #171717;
+    color: white;
+    display: flex;
+    justify-content: space-around;    
+  }
+
+  
+  .aluno h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: normal;
+  }
+  
+  .aluno p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+  }
+  
+  .aluno h1,
+  .aluno p,
+  .aluno .socials {
+    margin: .4rem;
+  }
+  
+  .aluno1 {
+    margin: .5rem ;
+  }
+  
+  .aluno2 {
+    margin: .5rem ;
+  }
+  
+  .aluno3 {
+    margin: .5rem;
+  }
+  
+  .developed {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+
+  footer {
+    background-color: black;
+    width: 100%;
+  
+  }
+  @media screen and (max-width: 1000px) {
+
+      .developed {
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+      }
+      .aluno {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+        width: 33%;
+      }
+
+      .aluno3 p {
+        margin-top: 20px;
+      }
+
+
+}
