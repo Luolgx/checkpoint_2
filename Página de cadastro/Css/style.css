@@ -14,6 +14,30 @@ body {
     height: 100vh;
 }
 
+header {
+  background-color: #090505;
+  color: whitesmoke;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  padding-bottom: 0px;
+
+}
+.style{
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.container_header img {
+   margin-bottom: 15px;
+}
+
+
 .logIn { 
     border-radius: 10px;
 }
@@ -71,7 +95,7 @@ body {
   
 
   footer {
-    background-color: black;
+    background-color: #171717;
     width: 100%;
   
   }
@@ -92,6 +116,11 @@ body {
 
       .aluno3 p {
         margin-top: 20px;
+      }
+      .style{
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-right: 100px;
       }
 
 

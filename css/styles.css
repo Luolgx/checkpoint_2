@@ -154,6 +154,7 @@ header {
 
 .container-card {
   padding-bottom: 5vh;
+  
 }
 
 .card-link {
@@ -228,8 +229,7 @@ footer {
 }
 
 .developed {
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: .4rem;
   font-weight: 400;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.936);
@@ -272,6 +272,7 @@ footer {
     flex-direction: column;
     justify-self: center;
     align-items: center;
+    padding-bottom: 0.5rem;
   
   }
 
