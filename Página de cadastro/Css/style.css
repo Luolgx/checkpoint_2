@@ -15,7 +15,6 @@ body {
 }
 
 header {
-  background-color: #090505;
   color: whitesmoke;
   width: 100%;
   display: flex;
@@ -51,7 +50,7 @@ header {
 
   
   .aluno h1 {
-    font-weight: 400;
+    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     font-style: normal;
@@ -85,6 +84,7 @@ header {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
+    margin: 0;
   }
 
   .socials {
@@ -110,13 +110,16 @@ header {
       .aluno {
         display: flex;
         flex-direction: column;
-        margin-left: 1.5rem;
         width: 33%;
       }
+      .aluno h1 {
+        font-weight: bold;
+        font-size: 14px;
 
-      .aluno3 p {
-        margin-top: 20px;
+        font-style: normal;
       }
+
+
       .style{
         font-size: 1.5rem;
         font-style: italic;
